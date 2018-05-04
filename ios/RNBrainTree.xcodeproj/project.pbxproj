@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F8CB2BD59A79FB6718A34BE /* libPods-RNBrainTree.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4546EEC9A230B2625A06828 /* libPods-RNBrainTree.a */; };
 		B3E7B58A1CC2AC0600A0062D /* RNBrainTree.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNBrainTree.m */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,9 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNBrainTree.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNBrainTree.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		384F8C28B817DE20175118BC /* Pods-RNBrainTree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNBrainTree.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNBrainTree/Pods-RNBrainTree.release.xcconfig"; sourceTree = "<group>"; };
+		5ADE82A75827175B5C6A762C /* Pods-RNBrainTree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNBrainTree.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNBrainTree/Pods-RNBrainTree.debug.xcconfig"; sourceTree = "<group>"; };
+		A4546EEC9A230B2625A06828 /* libPods-RNBrainTree.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNBrainTree.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* RNBrainTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNBrainTree.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNBrainTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNBrainTree.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F8CB2BD59A79FB6718A34BE /* libPods-RNBrainTree.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +58,26 @@
 				B3E7B5881CC2AC0600A0062D /* RNBrainTree.h */,
 				B3E7B5891CC2AC0600A0062D /* RNBrainTree.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				5C78EEE4AFD6B03AF33EC8F7 /* Pods */,
+				FAD0020D1D998AAFD32AACC7 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		5C78EEE4AFD6B03AF33EC8F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5ADE82A75827175B5C6A762C /* Pods-RNBrainTree.debug.xcconfig */,
+				384F8C28B817DE20175118BC /* Pods-RNBrainTree.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FAD0020D1D998AAFD32AACC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4546EEC9A230B2625A06828 /* libPods-RNBrainTree.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -63,9 +87,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNBrainTree" */;
 			buildPhases = (
+				9DA2F0DC82A78988ED67584B /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
+				5A0955FD7E1A13E7D72E4872 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -106,6 +132,45 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A0955FD7E1A13E7D72E4872 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RNBrainTree/Pods-RNBrainTree-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/BraintreeDropIn/Braintree-UIKit-Localization.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Braintree-UIKit-Localization.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNBrainTree/Pods-RNBrainTree-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DA2F0DC82A78988ED67584B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNBrainTree-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
@@ -202,9 +267,10 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ADE82A75827175B5C6A762C /* Pods-RNBrainTree.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
+					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
@@ -218,6 +284,7 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 384F8C28B817DE20175118BC /* Pods-RNBrainTree.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
